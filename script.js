@@ -36,37 +36,17 @@ function generatePassword() {
     characters = characters.concat(numbers);
   };
   if (selectChar.specialchr) {
-    characters = characters.concatx(specialchr);
+    characters = characters.concat(specialchr);
+  };
+  console.log(characters)
+
+  let genPass = [];
+  for (let i=0; i< passwordLength; i++) {
+    genPass.push(characters[Math.floor(Math.random()*characters.length)]);
   };
 
-  /*let selectUCL;
-  if (confirm("Add upper case letters to your password?") == true){
+  return genPass.join("");
 
-  } else {
-
-  };
-
-
-  let selectLCL;
-  if (confirm("Add lower case letters to your password?") == true){
-
-  } else {
-
-  };
-
-  let selectNUM;
-  if (confirm("Add numbers to your password?") == true){
-
-  } else {
-
-  };
-
-  let selectSC;
-  if (confirm("Add special characters to your password?") == true){
-
-  } else {
-
-  };*/
 
 };
 
