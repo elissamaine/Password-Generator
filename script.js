@@ -10,6 +10,42 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
+  let selectUCL;
+    if (confirm("Add upper case letters to your password?") == true){
+
+    } else {
+
+    };
+
+
+  let selectLCL;
+    if (confirm("Add lower case letters to your password?") == true){
+
+    } else {
+
+    };
+
+  let selectNUM;
+    if (confirm("Add numbers to your password?") == true){
+
+    } else {
+
+    };
+
+  let selectSC;
+    if (confirm("Add special characters to your password?") == true){
+
+    } else {
+
+    };
+  
+  let passwordLength = prompt("Password length.", "pick a number between 8 and 128");
+    if (passwordLength >= 8 && passwordLength <= 128) {
+
+    } else {
+        window.alert("Enterd value isnt in range.")
+    };
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
