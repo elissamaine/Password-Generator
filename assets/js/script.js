@@ -11,7 +11,8 @@ function generatePassword() {
   if (passwordLength >= 8 && passwordLength <= 128) {
 
    } else {
-    window.alert("Enterd value isnt in range.")
+    window.alert("Enterd value isnt in range.");
+    return;
   };
 
   //the confirm statements that ask if the used whnts the stated characters in the password, 
